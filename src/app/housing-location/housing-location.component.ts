@@ -8,6 +8,7 @@ import {HousingLocation} from '../housinglocation';
   template: `
     <section class="listing">
       <img
+        *ngIf = "housingLocation.photo" 
         class="listing-photo"
         [src]="housingLocation.photo"
         alt="Exterior photo of {{ housingLocation.name }}"
